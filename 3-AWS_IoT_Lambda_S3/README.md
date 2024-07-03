@@ -35,8 +35,8 @@ aws lambda add-permission --function-name <name> --region <region> --statement-i
 ### ESP8266 connection and events
 ![ESP8266 event logs.](./images/esp-events.png)
 
-### Lambda invocation logs (CloudWatch
-![Lambda CloudWatch logs.](./images/lambda-logs.png))
+### Lambda invocation logs (CloudWatch)
+![Lambda CloudWatch logs.](./images/lambda-logs.png)
 
 ### S3 files upload
 ![S3 files.](./images//s3-files.png)
