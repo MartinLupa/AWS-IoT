@@ -30,3 +30,13 @@ To enable the Lambda function to be triggered by IoT Analytics for data visualiz
 ```
 aws lambda add-permission --function-name <name> --region <region> --statement-id <id> --principal iotanalytics.amazonaws.com --action lambda:InvokeFunction
 ```
+
+## Integration flow
+### ESP8266 connection and events
+![ESP8266 event logs.](./images/esp-events.png)
+
+### Lambda invocation logs (CloudWatch
+![Lambda CloudWatch logs.](./images/lambda-logs.png))
+
+### S3 files upload
+![S3 files.](./images//s3-files.png)
