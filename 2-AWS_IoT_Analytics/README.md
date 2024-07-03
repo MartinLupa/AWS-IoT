@@ -21,3 +21,19 @@ The fake data published to AWS IoT is in JSON format and includes the following 
 ## Visualizing incoming data
 The data stored in the dataset files can be further used in a data pipeline. Lambdas can be used to manipulate this data and feed it to a data lake, for example.
 ![Data received screenshot, with temperature and humidity values](./images/data-set.png)
+
+## Example of a simple Lambda function to manipulate incoming data from IoT Analytics
+```js
+// Handler called by IoT Analytics
+exports.handler = function handler(event, context, callback) {
+    
+//add timesteamp to incoming data and name it "ServersideTimestamp"
+        event[0].ServersideTimestamp = Date.now();
+        
+        // Return the data        
+        callback(null, event);
+};
+```
+
+## Sending data to an S3 bucket
+![Creating a content delivery rule dropdown options](images/content-delivery-rule.png)

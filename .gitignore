@@ -1,3 +1,8 @@
+# Files and directories containing sensitive information
 aws-certs
 ESP8266-aws-iot-mlup.c
 ESP8266-aws-iot-data-set-mlup.c
+ESP8266-aws-iot-gps-mlup.c
+
+# other ignored files
+node_modules
